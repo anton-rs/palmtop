@@ -1,0 +1,26 @@
+[workspace]
+resolver = "2"
+members = [
+  "bin/*",
+  "crates/*"
+]
+default-members = ["bin/*"]
+
+[workspace.package]
+version = "0.0.1"
+edition = "2021"
+rust-version = "1.70"
+license = "MIT"
+homepage = "https://github.com/anton-rs/palmtop"
+repository = "https://github.com/anton-rs/palmtop"
+exclude = [".github/"]
+
+[profile.debug-fast]
+inherits = "release"
+debug = true
+
+[profile.maxperf]
+inherits = "release"
+lto = "fat"
+codegen-units = 1
+incremental = false
