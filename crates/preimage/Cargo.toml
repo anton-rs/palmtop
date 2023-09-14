@@ -9,6 +9,13 @@ repository.workspace = true
 description = "Preimage bindings for the Preimage Oracle ABI"
 
 [dependencies]
+palmtop-primitives = { path = "../primitives" }
+
 eyre = "0.6.8"
 tracing = "0.1.36"
 byteorder = "1.4.3"
+tempdir = { version = "0.3.7", optional = true }
+
+[features]
+default = ["test-utils"]
+test-utils = ["tempdir"]

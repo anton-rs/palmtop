@@ -1,7 +1,7 @@
-use std::process;
+// use std::process;
 
 use clap::Parser;
-use dirs::home_dir;
+// use dirs::home_dir;
 use eyre::Result;
 
 use palmtop_telemetry::{self, metrics};

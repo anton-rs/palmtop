@@ -11,14 +11,10 @@
     attr(deny(warnings, rust_2018_idioms), allow(dead_code, unused_variables))
 ))]
 
-//! Palmtop Preimage Oracle
+//! Palmtop Primitives
+//!
+//! This crate contains the core primitives for palmtop.
 
-/// The preimage oracle server.
-pub mod server;
-
-/// The preimage oracle client.
-pub mod client;
-
-/// Test utilities for the preimage oracle.
-#[cfg(feature = "test-utils")]
-pub mod test_utils;
+/// Preimage Oracle Primitives.
+pub mod preimage;
+pub use preimage::{Preimage, PreimageGetter, PreimageKey};
