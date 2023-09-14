@@ -1,0 +1,14 @@
+[package]
+name = "palmtop-preimage"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+homepage.workspace = true
+repository.workspace = true
+description = "Preimage bindings for the Preimage Oracle ABI"
+
+[dependencies]
+eyre = "0.6.8"
+tracing = "0.1.36"
+byteorder = "1.4.3"
