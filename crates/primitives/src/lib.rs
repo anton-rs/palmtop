@@ -18,3 +18,7 @@
 /// Preimage Oracle Primitives.
 pub mod preimage;
 pub use preimage::{Preimage, PreimageGetter, PreimageKey};
+
+/// Preimage Hint Primitives.
+pub mod hints;
+pub use hints::*;

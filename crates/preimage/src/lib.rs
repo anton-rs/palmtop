@@ -13,11 +13,17 @@
 
 //! Palmtop Preimage Oracle
 
+/// Internal object for reading and writing data.
+pub mod inner;
+
 /// The preimage oracle server.
 pub mod server;
 
 /// The preimage oracle client.
 pub mod client;
+
+/// Hints
+pub mod hints;
 
 /// Test utilities for the preimage oracle.
 #[cfg(feature = "test-utils")]
